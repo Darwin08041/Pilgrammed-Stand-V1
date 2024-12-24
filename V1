@@ -99,13 +99,13 @@ function cmdsetup(user)
 					local args = string.split(msg, ",")
 
 					if args[2] then
-						for i,v in pairs(game.Players:FindFirstChild(user):WaitForChild("Backpack")) do
+						for i,v in pairs(game.Players:FindFirstChild(user):WaitForChild("Backpack"):GetChildren()) do
 							if v.Name == args[2] then
 								weapon = args[2]
 								print("set weapon to ".. weapon)
 							end
 						end
-						for i,v in pairs(game.Players:FindFirstChild(user).Character) do
+						for i,v in pairs(game.Players:FindFirstChild(user).Character:GetChildren()) do
 							if v.Name == args[2] then
 								weapon = args[2]
 								print("set weapon to ".. weapon)
