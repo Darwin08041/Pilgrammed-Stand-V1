@@ -6,11 +6,11 @@ print("created by Darwin")
 -- Variables
 local placeholder
 local broken = false
-local adminuser = "standuser23746956" -- CHANGE TO YOUR USERNAME
+local adminuser = "standuser23746956"
 local username = adminuser
 local mode = "peaceful"
-local weapon = "Rockwondo" -- CHANGE TO YOUR WEAPON
-local pickaxe = "Iron Pickaxe" -- CHANGE TO YOUR PICKAXE
+local weapon = "Rockwondo"
+local pickaxe = "Gemstone Pickaxe"
 local autocrit = false
 local cd = 0
 local range = 50
@@ -55,6 +55,7 @@ function cmdsetup(user)
 					end
 				end
 				if string.find(text, ":unsummon") then
+					floating = false
 					pcall(function()
 						placeholder:Disconnect()
 					end)
@@ -162,6 +163,7 @@ function cmdsetup(user)
 						if userfound == false or not args[2] then
 							userfound = true
 							username = adminuser
+							floating = false
 							pcall(function()
 								placeholder:Disconnect()
 							end)
