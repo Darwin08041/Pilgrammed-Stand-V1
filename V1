@@ -1,3 +1,5 @@
+-- you can execute loadstring(game:HttpGet(('RAW GITHUB LINK HERE'),true))()
+
 print("Pilgrammed Stand V1, say :cmds and check console to see all possible commands")
 print("created by Darwin")
 -- Variables
