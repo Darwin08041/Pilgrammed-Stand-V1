@@ -1,4 +1,4 @@
-print("Pilgrammed Stand V1, say :cmds and check console to see all possible commands")
+
 print("created by Darwin")
 -- Variables
 local placeholder
