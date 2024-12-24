@@ -273,8 +273,9 @@ while broken == false do
 			for i,v in pairs(workspace:WaitForChild("Mobs"):GetDescendants()) do
 				if v:IsA("Model") and v.Name~="Elite Defender" and v:FindFirstChild("HumanoidRootPart") and root and proot then
 					local target = v:FindFirstChild("HumanoidRootPart")
+					local hum = v:FindFirstChild("Humanoid")
 					local dist = (proot.Position-target.Position).Magnitude
-					if game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health~=0 then
+					if game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health>=0 and hum.Health>=0 then
 						if dist<range and game:GetService("Players").LocalPlayer.Character:FindFirstChild(wep) and root then
 							if game:GetService("Players").LocalPlayer.Character:WaitForChild(wep) then
 								floating = false
