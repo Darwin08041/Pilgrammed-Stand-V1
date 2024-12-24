@@ -6,11 +6,11 @@ print("created by Darwin")
 -- Variables
 local placeholder
 local broken = false
-local adminuser = "standuser23746956"
+local adminuser = "standuser23746956" -- CHANGE TO YOUR USERNAME
 local username = adminuser
 local mode = "peaceful"
-local weapon = "Rockwondo"
-local pickaxe = "Iron Pickaxe"
+local weapon = "Rockwondo" -- CHANGE TO YOUR WEAPON
+local pickaxe = "Iron Pickaxe" -- CHANGE TO YOUR PICKAXE
 local autocrit = false
 local cd = 0
 local range = 50
