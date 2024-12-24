@@ -1,5 +1,4 @@
 print("Pilgrammed Stand V1")
---print("Pilgrammed Stand V1, say :cmds and check console to see all possible commands")
 -- Variables
 local placeholder
 local broken = false
