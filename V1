@@ -99,36 +99,16 @@ function cmdsetup(user)
 					local args = string.split(msg, ",")
 
 					if args[2] then
-						for i,v in pairs(game.Players:FindFirstChild(user):WaitForChild("Backpack"):GetChildren()) do
-							if v.Name == args[2] then
-								weapon = args[2]
-								print("set weapon to ".. weapon)
-							end
-						end
-						for i,v in pairs(game.Players:FindFirstChild(user).Character:GetChildren()) do
-							if v.Name == args[2] then
-								weapon = args[2]
-								print("set weapon to ".. weapon)
-							end
-						end
+						weapon = args[2]
+						print("set weapon to ".. weapon)
 					end
 				end
 				if string.find(text, ":setpickaxe") then
 					local args = string.split(msg, ",")
 
 					if args[2] then
-						for i,v in pairs(game.Players:FindFirstChild(user):WaitForChild("Backpack"):GetChildren()) do
-							if v.Name == args[2] then
-								pickaxe = args[2]
-								print("set pickaxe to ".. pickaxe)
-							end
-						end
-						for i,v in pairs(game.Players:FindFirstChild(user).Character:GetChildren()) do
-							if v.Name == args[2] then
-								pickaxe = args[2]
-								print("set pickaxe to ".. pickaxe)
-							end
-						end
+						pickaxe = args[2]
+						print("set pickaxe to ".. pickaxe)
 					end
 				end
 				if string.find(text, ":autocrit") then
@@ -227,7 +207,9 @@ while broken == false do
 				end
 			elseif game.Players.LocalPlayer.Backpack:FindFirstChild("Old Pickaxe") or game.Players.LocalPlayer.Character:FindFirstChild("Old Pickaxe") then
 				pick = "Old Pickaxe"
-				game.Players.LocalPlayer.Backpack:FindFirstChild("Old Pickaxe").Parent = game.Players.LocalPlayer.Character
+				if game.Players.LocalPlayer.Backpack:FindFirstChild("Old Pickaxe") then
+					game.Players.LocalPlayer.Backpack:FindFirstChild("Old Pickaxe").Parent = game.Players.LocalPlayer.Character
+				end
 			end
 		end
 
