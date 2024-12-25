@@ -157,6 +157,7 @@ function cmdsetup(user)
 										end
 									end
 									cmdsetup(username)
+									placeholder = float(username)
 								end
 							end
 						end
@@ -243,8 +244,8 @@ while broken == false do
 		cd = 0
 		local wep = nil
 		local root = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-		local proot = game.Players:FindFirstChild(username).Character:FindFirstChild("HumanoidRootPart")
-
+		local proot = nil
+		if game.Players:FindFirstChild(username).Character then proot = game.Players:FindFirstChild(username).Character:FindFirstChild("HumanoidRootPart") end
 		local tools = 0
 		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 			if v:IsA("Tool") then
@@ -276,7 +277,7 @@ while broken == false do
 
 		pcall(function()
 			for i,v in pairs(workspace:WaitForChild("Mobs"):GetDescendants()) do
-				if v:IsA("Model") and v.Name~="Elite Defender" and v:FindFirstChild("HumanoidRootPart") and root and proot then
+				if v:IsA("Model") and v.Name~="Elite Defender" and v:FindFirstChild("HumanoidRootPart") and root and proot~=nil then
 					local target = v:FindFirstChild("HumanoidRootPart")
 					local hum = v:FindFirstChild("Humanoid")
 					local dist = (proot.Position-target.Position).Magnitude
