@@ -243,7 +243,7 @@ while broken == false do
 		cd = 0
 		local wep = nil
 		local root = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-		local proot = game.Players:FindFirstChild(username).Character:WaitForChild("HumanoidRootPart")
+		local proot = game.Players:FindFirstChild(username).Character:FindFirstChild("HumanoidRootPart")
 
 		local tools = 0
 		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
