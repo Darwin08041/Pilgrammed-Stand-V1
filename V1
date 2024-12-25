@@ -157,7 +157,7 @@ function cmdsetup(user)
 										end
 									end
 									cmdsetup(username)
-									placeholder = float(username)
+									placeholder = float(game.Players:FindFirstChild(username))
 								end
 							end
 						end
