@@ -1,5 +1,6 @@
 -- you can execute loadstring(game:HttpGet(('https://raw.githubusercontent.com/Darwin08041/Pilgrammed-Stand-V1/refs/heads/main/V1'),true))() instead to run the script
 -- Works much better in private servers, in public servers tends to break or malfunction
+-- weapon equipped to stand must be in hotbar, pilgrammed coded inventory weapons weird so scripts & events nd shit are only in the hotbar weapons, sorry I'll make a workaround in v2 or a later update of v1
 
 print("Pilgrammed Stand V1, say :cmds and check console to see all possible commands")
 print("created by Darwin")
