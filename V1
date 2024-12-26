@@ -1,4 +1,5 @@
 -- you can execute loadstring(game:HttpGet(('https://raw.githubusercontent.com/Darwin08041/Pilgrammed-Stand-V1/refs/heads/main/V1'),true))() instead to run the script
+-- Works much better in private servers, in public servers tends to break or malfunction
 
 print("Pilgrammed Stand V1, say :cmds and check console to see all possible commands")
 print("created by Darwin")
