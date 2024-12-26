@@ -139,12 +139,12 @@ function cmdsetup(user)
 				end
 				if string.find(text, ":changeuser") then
 					if user == adminuser then
-						local args = string.split(msg, " ")
+						local args = string.split(text, " ")
 						local userfound = false
 
 						if args[2] then
 							for i,v in pairs(game.Players:GetChildren()) do
-								if v.Name == args[2] then
+								if string.lower(v.Name) == args[2] then
 									userfound = true
 									username = args[2]
 									pcall(function()
