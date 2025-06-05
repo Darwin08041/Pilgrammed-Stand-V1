@@ -7,7 +7,7 @@ print("created by Darwin")
 -- Variables
 local placeholder
 local broken = false
-local adminuser = "standuser23746956"
+local adminuser = "Ratboystanduser"
 local username = adminuser
 local mode = "peaceful"
 local weapon = "Rockwondo"
